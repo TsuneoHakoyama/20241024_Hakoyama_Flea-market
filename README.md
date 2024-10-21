@@ -2,9 +2,9 @@
 # coachtechフリマ
 ###### 概要:フリーマーケットアプリ。会員登録することで出品された商品の購入や販売を希望する商品の出品ができる。
 <-- トップ画面 PC版 -->
-![Top-page_PC](https://github.com/user-attachments/assets/c1689e37-467b-4e42-8ed9-cf438a65a881)
+<img src="https://github.com/user-attachments/assets/c1689e37-467b-4e42-8ed9-cf438a65a881" width=700px>
  <-- トップ画面 モバイル版 -->
-![Top-page_mobile](https://github.com/user-attachments/assets/4071b11d-0582-4e46-b64b-0c917d7a6833)
+<img src="https://github.com/user-attachments/assets/4071b11d-0582-4e46-b64b-0c917d7a6833" width="300px">
 
 ## アプリケーションURL
 ###### 開発環境：http://localhost/
@@ -47,11 +47,12 @@
 
 ## テーブル設計
 <-- 作成したテーブル設計の画像 -->
-![Table_design](https://github.com/user-attachments/assets/14da2e0b-21b0-42c2-b078-adca7dac0934)
+<img src="https://github.com/user-attachments/assets/14da2e0b-21b0-42c2-b078-adca7dac0934" width="600px">
+![Table_design]()
 
 ## ER図
 <-- 作成したER図の画像 -->
-![ER](https://github.com/user-attachments/assets/379ec895-1b50-4453-8d2d-5ce73ab64423)
+<img src="https://github.com/user-attachments/assets/379ec895-1b50-4453-8d2d-5ce73ab64423" width="600px">
 
 ## 環境構築
 ###### Dockerビルド
