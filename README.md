@@ -56,7 +56,7 @@
 
 ## 環境構築
 ###### Dockerビルド
-###### 1. git clone https://github.com/TsuneoHakoyama/Hakoyama_flea-market.git
+###### 1. git clone　https://github.com/TsuneoHakoyama/20241024_Hakoyama_Flea-market.git
 ###### 2. cd Hakoyama_flea-market
 ###### 2. docker compose up -d --build 
 ###### 3. docker compose exec php bash
