@@ -1,0 +1,121 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.main-board {
+    width: 70%;
+    margin: 50px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #f00;
+}
+
+.main-board p {
+    margin: 0;
+}
+
+.title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.item-image {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    border: 2px dotted #ccc;
+}
+
+.image-card input[type="file"] {
+    display: none;
+}
+
+.label {
+    border: 1px solid #f33;
+    border-radius: 5px;
+    color: #f33;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.image-card p {
+    margin-left: 20px;
+}
+
+.input-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sub-title {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #bbb;
+    border-bottom: 2px solid #bbb;
+}
+
+.item-class select, .item-info select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.item-info input, .item-price input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.submit button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px 10px;
+    background-color: #f33;
+    color: #fff;
+    border: 1px solid #f33;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    .logo-link {
+        width: 200px;
+    }
+
+    .main-board {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .title {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .user-image {
+        margin-bottom: 10px;
+    }
+
+    .input-form input {
+        margin-bottom: 10px;
+    }
+}

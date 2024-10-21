@@ -1,0 +1,58 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.link-list {
+    display: flex;
+    margin-right: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* body */
+.main-board {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #f00;
+}
+
+.main-board p {
+    margin: 30px 0 0;
+}
+
+.to select, .subject input, .content textarea {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.send {
+    margin: 30px 0 0;
+}
+
+.send button {
+    width: 100%;
+    background-color: #f33;
+    color: #fff;
+    border: 1px solid #f33;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

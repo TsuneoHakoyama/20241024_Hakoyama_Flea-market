@@ -1,0 +1,126 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-form button {
+    cursor: pointer;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+}
+
+.link-list li {
+    margin-left: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-list .put-up {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* body */
+.index-part {
+    display: flex;
+    margin-top: 50px;
+    border-bottom: 2px solid #666;
+}
+
+.recommend a {
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.my-list a {
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.active a {
+    color: #f33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item-board {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item-board a {
+    text-decoration: none;
+}
+
+.item-card {
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.name, .price {
+    font-size: 12px;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    .link-list {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 12px;
+    }
+
+    .link-list li {
+        margin-left: 10px;
+    }
+
+    .link-list a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .link-list .put-up {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .item-board {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 30px auto;
+    }
+}

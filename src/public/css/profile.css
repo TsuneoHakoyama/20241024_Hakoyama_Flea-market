@@ -1,0 +1,143 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-form button {
+    cursor: pointer;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+}
+
+.link-list li {
+    margin-left: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-list .put-up {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* main */
+.main-board {
+    width: 60%;
+    margin: 50px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #f00;
+}
+
+.main-board p {
+    margin: 0;
+}
+
+.title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.user-image {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.user-image img {
+    width: 20%;
+}
+
+.user-image input[type=file] {
+    display: none;
+}
+
+.user-image label {
+    border: 1px solid #f33;
+    border-radius: 5px;
+    color: #f33;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.user-image p {
+    margin-left: 10px;
+}
+
+.label-card {
+    display: flex;
+    align-items: center;
+}
+
+.input-form input {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.submit button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px 10px;
+    background-color: #f33;
+    color: #fff;
+    border: 1px solid #f33;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    .logo-link {
+        width: 200px;
+    }
+
+    .main-board {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .title {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .user-image {
+        margin-bottom: 10px;
+    }
+
+    .input-form input {
+        margin-bottom: 10px;
+    }
+}

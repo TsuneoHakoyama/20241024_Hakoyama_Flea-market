@@ -1,0 +1,58 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.link-list {
+    display: flex;
+    margin-right: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* body */
+.main-board {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.user-name p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.message {
+    color: #f00;
+}
+
+.comment-list {
+    width: 100%;
+    font-size: 16px;
+}
+
+.comment-list th {
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.comment-list td {
+    padding: 5px;
+    border-top: 1px solid #000;
+}
+
+.delete {
+    background-color: #f00;
+    color: #fff;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,172 @@
+/* header */
+.logo-link {
+    width: 20%;
+}
+
+.logo-link a img {
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-form button {
+    cursor: pointer;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+}
+
+.link-list li {
+    margin-left: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-list .put-up {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* body */
+.index-part {
+    margin-top: 50px;
+    border-bottom: 2px solid #666;
+}
+
+.index-part a {
+    text-decoration: none;
+}
+
+.user {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.user a {
+    width: 60%;
+    border: 1px solid #f33;
+    border-radius: 5px;
+    color: #f33;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.user-info img {
+    width: 20%;
+}
+
+.user-name {
+    margin-left: 30px;
+}
+
+.items {
+    display: flex;
+    margin-top: 50px;
+}
+
+.sell-items, .buy-items {
+    margin-left: 80px;
+}
+
+.active a {
+    color: #f33;
+    font-weight: bold;
+}
+
+.item-board {
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item-board a {
+    text-decoration: none;
+}
+
+.item-card {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.image a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.name, .price {
+    font-size: 12px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .link-list {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 12px;
+    }
+
+    .link-list li {
+        margin-left: 10px;
+    }
+
+    .link-list a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .link-list .put-up {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .user {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info {
+        margin-bottom: 20px;
+    }
+
+    .sell-items, .buy-items {
+        margin-left: 40px;
+    }
+
+    .item-board {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 30px auto;
+    }
+}
