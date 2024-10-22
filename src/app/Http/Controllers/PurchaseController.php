@@ -14,11 +14,12 @@ class PurchaseController extends Controller
     public function confirm($item_id)
     {
         $item = Item::where('id', $item_id)
-                ->first();
+                      ->first();
         $address = Profile::where('user_id', Auth::id())
-                   ->first();
+                            ->first();
 
         if (is_null($address)) {
+            
             return redirect()->route('profile');
         }
 

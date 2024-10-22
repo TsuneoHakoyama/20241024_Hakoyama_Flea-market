@@ -19,10 +19,10 @@ class AdminController extends Controller
     public function userComments($user_id)
     {
         $user = Profile::where('user_id', $user_id)
-                     ->first();
+                         ->first();
         $comments = Comment::where('user_id', $user_id)
-                    ->with('item')
-                    ->get();
+                             ->with('item')
+                             ->get();
 
         return view('admin.user-comment', compact(['user','comments']));
     }

@@ -11,7 +11,7 @@ class StripeController extends Controller
 {
     public function payByCard(Request $request)
     {
-        Stripe::setApiKey(config('services.stripe.st_key')); //シークレットキー
+        Stripe::setApiKey(config('services.stripe.st_key'));
 
         $charge = Charge::create(array(
             'amount' => $request->price,

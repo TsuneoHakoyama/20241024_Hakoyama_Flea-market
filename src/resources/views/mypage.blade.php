@@ -34,14 +34,17 @@
 <div class="index-part">
     <div class="user">
         <div class="user-info">
-            @if (is_null($info->null))
-            <img src="{{ asset('storage/images/users/default_user_icon.png') }}">
+            @if (is_null($info->image))
+            <img src="{{ asset('storage/images/users/default_user_icon.png') }}" alt="ユーザー画像">
             @else
             <img src="{{ $info->image }}">
             @endif
             <div class="user-name">{{ $info->name }}</div>
         </div>
-        <a href="{{ route('profile') }}">プロフィールを編集</a>
+        <div class="to-profile">
+            <a href="{{ route('profile') }}">プロフィールを編集</a>
+        </div>
+
     </div>
     @if (empty($buy_list))
     <div class="items">

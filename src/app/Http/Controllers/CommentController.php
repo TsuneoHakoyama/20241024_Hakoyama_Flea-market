@@ -12,11 +12,11 @@ class CommentController extends Controller
     public function show(Item $item_id)
     {
         $item = Item::where('id', $item_id->id)
-                ->with(['comments', 'favorites'])
-                ->first();
+                      ->with(['comments', 'favorites'])
+                      ->first();
         $comments = Comment::where('item_id', $item_id->id)
-                    ->with('user.profile')
-                    ->get();
+                             ->with('user.profile')
+                             ->get();
 
         return view('comment', compact('item', 'comments'));
     }

@@ -14,7 +14,7 @@ class MypageController extends Controller
         $info = Profile::where('user_id', $user_id)
                          ->first();
         $items = Item::where('user_id', $user_id)
-                      ->get();
+                       ->get();
 
         return view('mypage', compact(['info', 'items']));
     }

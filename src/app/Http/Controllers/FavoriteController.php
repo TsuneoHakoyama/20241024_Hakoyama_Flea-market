@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Favorite;
-use App\Models\Item;
 use Illuminate\Support\Facades\Auth;
 
 class FavoriteController extends Controller
@@ -24,8 +23,8 @@ class FavoriteController extends Controller
     public function delete($item_id)
     {
         Favorite::where('user_id', Auth::id())
-        ->where('item_id', $item_id)
-        ->delete();
+                  ->where('item_id', $item_id)
+                  ->delete();
 
         return redirect()->back();
     }

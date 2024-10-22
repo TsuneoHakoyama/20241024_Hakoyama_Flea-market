@@ -20,9 +20,9 @@ class ItemController extends Controller
     {
             $user = Auth::id();
             $items = Item::with(['favorites'])
-                     ->whereHas('favorites', function($query) use ($user) {
-                        $query->where('user_id', $user);
-                     })->get();
+                           ->whereHas('favorites', function($query) use ($user) {
+                            $query->where('user_id', $user);
+                           })->get();
 
             $my_list = 'active';
 
@@ -46,7 +46,7 @@ class ItemController extends Controller
             foreach ($search_words as $search_word) {
                 $query->where(function ($q) use ($search_word) {
                     $q->where('name', 'like', '%' . $search_word . '%')
-                        ->orwhere('description', 'like', '%' . $search_word . '%');
+                      ->orwhere('description', 'like', '%' . $search_word . '%');
                 });
             }
         }
@@ -57,11 +57,11 @@ class ItemController extends Controller
     public function detailItem(Item $item_id)
     {
         $item = Item::where('id', $item_id->id )
-                ->with(['categories', 'comments', 'company', 'condition', 'favorites'])
-                ->first();
+                      ->with(['categories', 'comments', 'company', 'condition', 'favorites'])
+                      ->first();
         $favorite = Favorite::where('item_id', $item_id->id)
-                    ->where('user_id', Auth::id())
-                    ->first();
+                              ->where('user_id', Auth::id())
+                              ->first();
 
         return view('item-detail', compact('item', 'favorite'));
     }

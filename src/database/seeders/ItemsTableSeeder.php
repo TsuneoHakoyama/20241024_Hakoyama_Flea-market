@@ -91,7 +91,7 @@ class ItemsTableSeeder extends Seeder
             'company_id' => 1,
             'condition_id' => 1,
             'description' => 'コンパクトで重さを感じにくく使いやすい。タンク容量が大きく給水の手間を省けます。高温スチームで除菌脱臭も。',
-            'image' => 'storage/images/items/hair-dryer.jpg'
+            'image' => 'storage/images/items/hairdryer.jpg'
         ];
         DB::table('items')->insert($param);
         $param = [

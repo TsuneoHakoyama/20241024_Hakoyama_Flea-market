@@ -7,7 +7,6 @@ use App\Models\Category;
 use App\Models\Company;
 use App\Models\Condition;
 use App\Models\Item;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 

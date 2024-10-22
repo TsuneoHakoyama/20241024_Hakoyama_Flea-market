@@ -55,12 +55,16 @@
 <img src="https://github.com/user-attachments/assets/379ec895-1b50-4453-8d2d-5ce73ab64423" width="600px">
 
 ## 環境構築
-###### Dockerビルド
-###### 1. git clone　https://github.com/TsuneoHakoyama/20241024_Hakoyama_Flea-market.git
-###### 2. cd Hakoyama_flea-market
-###### 2. docker compose up -d --build 
-###### 3. docker compose exec php bash
-###### 4. composer install
-###### 5. cp .env.develop .env （本番環境の場合.env.productionを利用予定。現時点では環境変数は記載されていない。）
-###### 6. php artisan key:generate
-###### 7. php artisan migrate --seed
+###### 1. git clone https://github.com/TsuneoHakoyama/20241024_Hakoyama_Flea-market.git
+###### 2. cd 20241024_Hakoyama_Flea-market
+###### 3. docker desktopの起動
+###### 4. docker compose up -d --build
+###### 5. docker compose exec php bash
+###### 6. composer install
+###### 7. cp .env.develop .env （本番環境の場合.env.productionを利用予定。現時点では環境変数は記載されていない。）
+###### 8. php artisan key:generate
+###### 9. php artisan migrate --seed
+###### 10.php artisan storage:link
+###### 11.localhostへアクセス (permission deniedエラーが出た場合、$ chmod -R 777 storage bootstrap/cacheを入力)。email:test1@example.com, password:passwordでログイン。
+###### 12.管理画面にログインするにはlocalhost/admin/loginへアクセス。email:administrator1@example.com, password:administratorでログイン。
+

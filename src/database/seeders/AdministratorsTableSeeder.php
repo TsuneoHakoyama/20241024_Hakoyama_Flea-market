@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Administrator;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class AdministratorsTableSeeder extends Seeder
 {
@@ -14,6 +15,15 @@ class AdministratorsTableSeeder extends Seeder
      */
     public function run()
     {
-        Administrator::factory()->count(2)->create();
+        $param = [
+            'email' => 'administrator1@example.com',
+            'password' => Hash::make('administrator'),
+        ];
+        DB::table('administrators')->insert($param);
+        $param = [
+            'email' => 'administrator2@example.com',
+            'password' => Hash::make('administrator'),
+        ];
+        DB::table('administrators')->insert($param);
     }
 }
