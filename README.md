@@ -48,6 +48,7 @@
 
 ## テーブル設計
 ###### テーブル仕様書
+###### category_item_tableは中間テーブルなので単数形でアルファベット順にテーブル名を記載している。
 <img src="https://github.com/user-attachments/assets/14da2e0b-21b0-42c2-b078-adca7dac0934" width="600px">
 
 ## ER図
