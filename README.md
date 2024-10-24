@@ -66,7 +66,7 @@
 ###### 8. php artisan key:generate
 ###### 9. php artisan migrate --seed
 ###### 10.php artisan storage:link
-###### 11.php chmod -R 777 storage bootstrap/cache
+###### 11.chmod -R 777 storage bootstrap/cache
 ###### 11.localhostへアクセス。email:test1@example.com, password:passwordでログイン。
 ###### 12.管理画面にログインするにはlocalhost/admin/loginへアクセス。email:administrator1@example.com, password:administratorでログイン。
 
