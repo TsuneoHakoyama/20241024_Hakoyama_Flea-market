@@ -39,7 +39,7 @@
         <form action="/profile/store" method="post" enctype="multipart/form-data">
             @csrf
             <div class="user-image">
-                <img src="{{ asset('storage/images/users/default_user_icon.png') }}" alt="ユーザー画像">
+                <img src="{{ asset('storage/images/users/default_user_icon.png') }}">
                 <div class="label-card">
                     <label class="label" for="image">
                         <input type="file" name="image" id="image">画像を選択する

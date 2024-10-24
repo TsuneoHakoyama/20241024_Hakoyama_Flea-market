@@ -37,7 +37,7 @@
             @if (is_null($info->image))
             <img src="{{ asset('storage/images/users/default_user_icon.png') }}" alt="ユーザー画像">
             @else
-            <img src="{{ $info->image }}">
+            <img src="{{ asset($info->image) }}">
             @endif
             <div class="user-name">{{ $info->name }}</div>
         </div>
@@ -70,7 +70,7 @@
     @foreach ($items as $item)
     <div class="item-card">
         <div class="image">
-            <a href="{{ route('detail', ['item_id' => $item->id]) }}"><img src="{{ $item->image }}" alt="item"></a>
+            <a href="{{ route('detail', ['item_id' => $item->id]) }}"><img src="{{ asset($item->image) }}" alt="item"></a>
         </div>
         <div class="product-detail">
             <a href="{{ route('detail', ['item_id' => $item->id]) }}">

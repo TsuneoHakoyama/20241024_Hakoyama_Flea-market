@@ -13,7 +13,6 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SellController;
 use App\Http\Controllers\SendMailController;
 use App\Http\Controllers\StripeController;
-use App\Models\Administrator;
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -68,8 +68,13 @@
             @foreach ($comments as $comment)
             @if ($comment->user_id === Auth::id())
             <div class="seller">
-                <img src="{{ optional($comment->user->profile)->image }}" alt="ユーザー画像">
-                <div class="user-name">{{ optional($comment->user->profile)->name }}</div>
+                @if (isset($comment->user->profile->image))
+                <img src="{{ asset($comment->user->profile->image) }}">
+                @else
+                <img src="{{ asset('storage/images/users/default_user_icon.png') }}">
+                @endif
+                <div class="user-name">{{ optional($comment->user->profile)->name }}
+                </div>
             </div>
             <div class="seller-comment">
                 <div class="comment">{{ $comment->comment }}</div>
@@ -81,7 +86,11 @@
             </div>
             @else
             <div class="buyer">
-                <img src="{{ optional($comment->user->profile)->image }}" alt="ユーザー画像">
+                @if ( isset($comment->user->profile->image))
+                <img src="{{ asset($comment->user->profile->image) }}" alt="ユーザー画像">
+                @else
+                <img src="{{ asset('storage/images/users/default_user_icon.png') }}" alt="ユーザー画像">
+                @endif
                 <div class="user-name">{{ optional($comment->user->profile)->name }}</div>
             </div>
             <div class="comment">{{ $comment->comment }}</div>

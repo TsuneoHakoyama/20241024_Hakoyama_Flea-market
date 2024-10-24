@@ -49,12 +49,12 @@
 
 .image-board {
     width: 40%;
-    text-align: center;
-    background-color: #ddd;
+    height: auto;
 }
 
 .image-board img {
     width: 100%;
+    height: auto;
 }
 
 .description-board {
@@ -113,7 +113,12 @@
 .seller {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 20px 0 0;
+}
+
+.seller img  {
+    width: 2rem;
 }
 
 .seller-comment {
@@ -139,11 +144,12 @@
 
 .buyer {
     display: flex;
+    align-items: center;
     margin: 20px 0 0;
 }
 
-.user-name {
-    margin-left: 30px;
+.buyer img {
+    width: 2rem;
 }
 
 .comment {
