@@ -1,3 +1,6 @@
 *
 !images
+!images/*
+!images/items/*
+!images/users/*
 !.gitignore
